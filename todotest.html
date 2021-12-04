@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>
+            Todo Test
+        </title>
+        <script src='goodlib.js'></script>
+    </head>
+    <body>
+        <button onClick="var tasks = document.querySelector('#tasks');tasks.textContent += document.querySelector('#input').textContent + '\n';document.querySelector('#url').textContent += document.querySelector('#input').textContent;">Add task</button>
+        <h3 id="input" contenteditable></h3>
+        <h1>Tasks:</h1>
+        <h4 id="tasks"></h4>
+        <script>
+           if (getQueryVariable(tasks) != -1) {
+                document.querySelector('#tasks').textContent = getQueryVariable(tasks);
+           } 
+        </script>
+        <h6 id="url">https://localhost:8080/todotest.html?tasks=</h6>
+    </body>
+</html>

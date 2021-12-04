@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            CSS Animation Tests
+        </title>
+        <script src="goodlib.js"></script>
+        <link rel="stylesheet" href="goodlib.css">
+    </head>
+    <body>
+        <button id="onesecspin">Hold to Spin (1 sec)</button>
+        <br>
+        <button id="fivesecspin">Hold to Spin (5 sec)</button>
+        <br>
+        <button id="minutespin">Hold to Spin (1 min)</button>
+        <br>
+        <button id="ahhhourspin">Hold to Spin (1 hour)</button>
+        <style>
+            #fivesecspin:active {
+                animation: spin 5000ms;
+            }
+            
+            #onesecspin:active {
+                animation: spin 1000ms;
+            }
+            
+            #minutespin:active {
+                animation: spin 60000ms;
+            }
+            
+            #ahhhourspin:active {
+                animation: spin 3600000ms;
+            }
+        </style>
+    </body>
+</html>
